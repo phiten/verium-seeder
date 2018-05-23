@@ -1,7 +1,7 @@
-VeriCoin Seeder
+Verium Seeder
 ====================
 
-vericoin-seeder is a crawler for the VeriCoin network, which 
+verium-seeder is a crawler for the Verium network, which 
 exposes a list of reliable nodes via a built-in DNS server, or instead
 just generates that list to push to a remote CloudFlare server.
 
@@ -9,8 +9,8 @@ Features:
 * CloudFlare DNS integration
 * regularly revisits known nodes to check their availability
 * bans nodes after enough failures, or bad behaviour
-* accepts nodes down to v1.6.5 to request new IP addresses from,
-  but only reports good post-v1.7.1 nodes.
+* accepts nodes down to v1.0.4 to request new IP addresses from,
+  but only reports good post-1.0.4 nodes.
 * keeps statistics over (exponential) windows of 2 hours, 8 hours,
   1 day and 1 week, to base decisions on.
 * very low memory (a few tens of megabytes) and cpu requirements.
