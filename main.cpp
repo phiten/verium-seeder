@@ -397,13 +397,15 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"vrmdns.vericoin.info", ""};
+static const string mainnet_seeds[] = {"emea.vrm.vericonomy.com", "amer.vrm.vericonomy.com", "apac.vrm.vericonomy.com", ""};
 static const string testnet_seeds[] = {"", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-	db.Add(CService("159.203.170.126", 36988), true);
+    db.Add(CService("206.189.59.89", 36988), true);
+    db.Add(CService("206.189.209.81", 36988), true);
+    db.Add(CService("206.189.145.110", 36988), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
